@@ -63,22 +63,22 @@ describe('When logged in', () => {
   });
 });
 
-const actions = [
-  {
-    method: 'get',
-    path: '/api//blogs',
-  },
-  {
-    method: 'post',
-    path: '/api//blogs',
-    data: {
-      title: 'My Titlte',
-      content: 'My Content'
-    }
-  }
-];
-
 describe('When not logged in', () => {
+  const actions = [
+    {
+      method: 'get',
+      path: '/api/blogs',
+    },
+    {
+      method: 'post',
+      path: '/api/blogs',
+      data: {
+        title: 'My Titlte',
+        content: 'My Content'
+      }
+    }
+  ];
+
   test('Blog related actions are prohibited', async () => {
     const results = await page.execRequests(actions);
 
