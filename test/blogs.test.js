@@ -69,7 +69,7 @@ const actions = [
     path: '/api//blogs',
   },
   {
-    method: 'get',
+    method: 'post',
     path: '/api//blogs',
     data: {
       title: 'My Titlte',
