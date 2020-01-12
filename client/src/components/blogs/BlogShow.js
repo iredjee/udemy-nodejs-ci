@@ -12,7 +12,7 @@ class BlogShow extends Component {
       return (
         <img
           src={`https://udemy-nodejs-advanced-blog.s3.amazonaws.com/${this.props.blog.imageUrl}`}
-          alt="blog image" />
+          alt="blog post" />
       );
     }
   }
